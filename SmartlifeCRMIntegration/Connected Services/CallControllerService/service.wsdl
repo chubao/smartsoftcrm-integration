@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceController" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IServiceController_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceController_InitailState_InputMessage">
+    <wsdl:part name="parameters" element="tns:InitailState" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_InitailState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InitailStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_GetInitailDN_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInitailDN" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_GetInitailDN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInitailDNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_BargeinCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:BargeinCall" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_BargeinCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BargeinCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_DropCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:DropCall" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_DropCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DropCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_DivertCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:DivertCall" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_DivertCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DivertCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Listen_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listen" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Listen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_MakeCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:MakeCall" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_MakeCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MakeCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_PickupCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:PickupCall" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_PickupCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PickupCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_TransferCall_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferCall" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_TransferCall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferCallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_WhisperTo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WhisperTo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_WhisperTo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WhisperToResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Ping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Ping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Inserted_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Inserted" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Inserted_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:InsertedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Updated_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Updated" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Updated_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UpdatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Deleted_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Deleted" />
+  </wsdl:message>
+  <wsdl:message name="IServiceController_Deleted_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:DeletedResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IServiceController">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="InitailState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/InitailState" message="tns:IServiceController_InitailState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/InitailStateResponse" message="tns:IServiceController_InitailState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetInitailDN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/GetInitailDN" message="tns:IServiceController_GetInitailDN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/GetInitailDNResponse" message="tns:IServiceController_GetInitailDN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="BargeinCall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/BargeinCall" message="tns:IServiceController_BargeinCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/BargeinCallResponse" message="tns:IServiceController_BargeinCall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DropCall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/DropCall" message="tns:IServiceController_DropCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/DropCallResponse" message="tns:IServiceController_DropCall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="DivertCall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/DivertCall" message="tns:IServiceController_DivertCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/DivertCallResponse" message="tns:IServiceController_DivertCall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Listen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/Listen" message="tns:IServiceController_Listen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/ListenResponse" message="tns:IServiceController_Listen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="MakeCall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/MakeCall" message="tns:IServiceController_MakeCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/MakeCallResponse" message="tns:IServiceController_MakeCall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="PickupCall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/PickupCall" message="tns:IServiceController_PickupCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/PickupCallResponse" message="tns:IServiceController_PickupCall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="TransferCall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/TransferCall" message="tns:IServiceController_TransferCall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/TransferCallResponse" message="tns:IServiceController_TransferCall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="WhisperTo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/WhisperTo" message="tns:IServiceController_WhisperTo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/WhisperToResponse" message="tns:IServiceController_WhisperTo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Ping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/Ping" message="tns:IServiceController_Ping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/PingResponse" message="tns:IServiceController_Ping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Inserted">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/Inserted" message="tns:IServiceController_Inserted_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/InsertedResponse" message="tns:IServiceController_Inserted_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Updated">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/Updated" message="tns:IServiceController_Updated_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/UpdatedResponse" message="tns:IServiceController_Updated_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Deleted">
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceController/Deleted" message="tns:IServiceController_Deleted_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceController/DeletedResponse" message="tns:IServiceController_Deleted_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IServiceController" type="tns:IServiceController">
+    <wsp:PolicyReference URI="#NetTcpBinding_IServiceController_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="InitailState">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/InitailState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInitailDN">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/GetInitailDN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BargeinCall">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/BargeinCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DropCall">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/DropCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DivertCall">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/DivertCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listen">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/Listen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MakeCall">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/MakeCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PickupCall">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/PickupCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferCall">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/TransferCall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WhisperTo">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/WhisperTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ping">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/Ping" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Inserted">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/Inserted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updated">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/Updated" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deleted">
+      <soap12:operation soapAction="http://tempuri.org/IServiceController/Deleted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceController">
+    <wsdl:port name="NetTcpBinding_IServiceController" binding="tns:NetTcpBinding_IServiceController">
+      <soap12:address location="net.tcp://localhost:8090/CallControllerService/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8090/CallControllerService/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

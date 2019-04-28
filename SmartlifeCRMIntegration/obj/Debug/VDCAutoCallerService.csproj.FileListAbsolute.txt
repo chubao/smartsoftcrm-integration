@@ -1,0 +1,9 @@
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\VDCAutoCallerService.exe.config
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\VDCAutoCallerService.exe
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\VDCAutoCallerService.pdb
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\log4net.dll
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\Topshelf.dll
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\obj\Debug\VDCAutoCallerService.exe
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\obj\Debug\VDCAutoCallerService.pdb
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\Newtonsoft.Json.dll
+D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\bin\Debug\Newtonsoft.Json.xml

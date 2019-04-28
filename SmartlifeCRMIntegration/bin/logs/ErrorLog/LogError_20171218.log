@@ -1,0 +1,3 @@
+2017-12-18 21:56:01,373 ERROR - Test exection.
+System.Exception: Test exection.
+   at VDCAutoCallerService.Program.Main(String[] args) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Program.cs:line 20

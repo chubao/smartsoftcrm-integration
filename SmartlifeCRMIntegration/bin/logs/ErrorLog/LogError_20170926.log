@@ -1,0 +1,90 @@
+2017-09-26 18:47:47,775 ERROR - InitailState
+System.InvalidOperationException: Cannot make a call on this channel because a call to Open() is in progress.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfOpening()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at VDCAutoCallerService.CallControllerService.IServiceController.InitailState(String name)
+   at VDCAutoCallerService.CallControllerService.ServiceControllerClient.InitailState(String name) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Connected Services\CallControllerService\Reference.cs:line 127
+   at VDCAutoCallerService.Proxy.ClientControllerProxy..ctor() in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Proxy\ClientControllerProxy.cs:line 86
+2017-09-26 18:50:12,555 ERROR - InitailState
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.WaitHandle.WaitOneNative(SafeHandle waitableSafeHandle, UInt32 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.InternalWaitOne(SafeHandle waitableSafeHandle, Int64 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   at System.Threading.WaitHandle.WaitOne(TimeSpan timeout, Boolean exitContext)
+   at System.Runtime.TimeoutHelper.WaitOne(WaitHandle waitHandle, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.DuplexChannelBinder.SyncDuplexRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at VDCAutoCallerService.CallControllerService.IServiceController.InitailState(String name)
+   at VDCAutoCallerService.CallControllerService.ServiceControllerClient.InitailState(String name) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Connected Services\CallControllerService\Reference.cs:line 127
+   at VDCAutoCallerService.Proxy.ClientControllerProxy..ctor() in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Proxy\ClientControllerProxy.cs:line 86
+2017-09-26 18:50:17,942 ERROR - InitailState
+System.InvalidOperationException: Cannot make a call on this channel because a call to Open() is in progress.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfOpening()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at VDCAutoCallerService.CallControllerService.IServiceController.InitailState(String name)
+   at VDCAutoCallerService.CallControllerService.ServiceControllerClient.InitailState(String name) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Connected Services\CallControllerService\Reference.cs:line 127
+   at VDCAutoCallerService.Proxy.ClientControllerProxy..ctor() in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Proxy\ClientControllerProxy.cs:line 86
+2017-09-26 18:53:32,590 ERROR - InitailState
+System.InvalidOperationException: Cannot make a call on this channel because a call to Open() is in progress.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfOpening()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at VDCAutoCallerService.CallControllerService.IServiceController.InitailState(String name)
+   at VDCAutoCallerService.CallControllerService.ServiceControllerClient.InitailState(String name) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Connected Services\CallControllerService\Reference.cs:line 127
+   at VDCAutoCallerService.Proxy.ClientControllerProxy..ctor() in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Proxy\ClientControllerProxy.cs:line 86
+2017-09-26 18:54:52,703 ERROR - InitailState
+System.InvalidOperationException: Cannot make a call on this channel because a call to Open() is in progress.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfOpening()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at VDCAutoCallerService.CallControllerService.IServiceController.InitailState(String name)
+   at VDCAutoCallerService.CallControllerService.ServiceControllerClient.InitailState(String name) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Connected Services\CallControllerService\Reference.cs:line 127
+   at VDCAutoCallerService.Proxy.ClientControllerProxy..ctor() in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Proxy\ClientControllerProxy.cs:line 86
+2017-09-26 18:55:18,352 ERROR - InitailState
+System.InvalidOperationException: Cannot make a call on this channel because a call to Open() is in progress.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfOpening()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at VDCAutoCallerService.CallControllerService.IServiceController.InitailState(String name)
+   at VDCAutoCallerService.CallControllerService.ServiceControllerClient.InitailState(String name) in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Connected Services\CallControllerService\Reference.cs:line 127
+   at VDCAutoCallerService.Proxy.ClientControllerProxy..ctor() in D:\_MyWork_\3CX\vdc-3cx-api\VDCAutoCallerService\VDCAutoCallerService\Proxy\ClientControllerProxy.cs:line 86
